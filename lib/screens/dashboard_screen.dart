@@ -1,11 +1,36 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
-class DashboardScreen extends StatelessWidget {
+class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
 
   @override
+  State<DashboardScreen> createState() => _DashboardScreenState();
+}
+
+class _DashboardScreenState extends State<DashboardScreen> {
+  bool _isInitialized = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _initializeDateFormatting();
+  }
+
+  Future<void> _initializeDateFormatting() async {
+    await initializeDateFormatting('tr_TR', null);
+    setState(() {
+      _isInitialized = true;
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
+    if (!_isInitialized) {
+      return const Center(child: CircularProgressIndicator());
+    }
+
     final today = DateFormat('EEEE, d MMMM y', 'tr_TR').format(DateTime.now());
 
     return SingleChildScrollView(

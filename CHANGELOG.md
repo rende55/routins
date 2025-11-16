@@ -2,7 +2,19 @@
 
 Tüm önemli değişiklikler bu dosyada belgelenecektir.
 
-## [2.0.0] - 2025-11-17 00:30
+## [2.0.0] - 2025-11-17 01:15
+
+### Dokümantasyon
+- 📚 `docs/` dizini oluşturuldu
+- 📄 PROJECT_CONCEPT.md: Proje konsepti, vizyon ve hedefler (4000+ satır)
+- 📄 DEVELOPMENT_PLAN.md: Geliştirme planı ve öncelikler (500+ satır)
+- 📄 ARCHITECTURE.md: Teknik mimari ve tasarım prensipleri (800+ satır)
+- 📄 SUMMARY.md: Proje özeti ve hızlı bakış (400+ satır)
+- 📄 docs/README.md: Dokümantasyon rehberi
+- 📝 Ana README.md güncellendi (yeni özellikler ve yapı)
+- 🎯 Gelecek özellikler ve roadmap belirlendi
+- 🔧 Teknik borç ve iyileştirmeler listelendi
+- 📊 Sprint planları ve milestone'lar tanımlandı
 
 ### Yeniden Yapılandırma
 - 🎨 Uygulama tamamen yeniden tasarlandı (React şablonuna göre)
@@ -26,6 +38,9 @@ Tüm önemli değişiklikler bu dosyada belgelenecektir.
 - Dialog widget'ları ile modal formlar
 - Gradient dekorasyonlar
 - Responsive grid layout'lar
+- Android Gradle Plugin 8.3.0'a güncellendi (Java 21 uyumluluğu için)
+- Kotlin 1.9.0'a güncellendi
+- Gradle 8.4'e güncellendi (AGP 8.3.0 gereksinimi)
 
 ## [1.0.0] - 2025-11-17 00:08
 
